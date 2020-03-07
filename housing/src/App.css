@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+html{
+  box-sizing: border-box;
+  padding: 75px 75px 75px 75px;
+}
+
+h1{
+  padding-bottom: 30px;
+}
+
+h3{
+  padding-top: 30px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

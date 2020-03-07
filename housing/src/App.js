@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Route path="/" exact component={Home} />
       <Route path="/browse" exact component={Listings} />
-      <Route path="/newListing" component={CreateListing} />
+      <Route path="/newListing" exact component={CreateListing} />
     </Router>
   );
 }

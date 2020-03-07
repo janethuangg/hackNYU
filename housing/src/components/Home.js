@@ -5,7 +5,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <div class = "container">
+        <div className="container">
             <div className="option">
                 <Button variant="primary" href="/browse">Browse All Listings</Button>
             </div>
