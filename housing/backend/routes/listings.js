@@ -8,13 +8,22 @@ router.route('/').get((req, res) => {
 });
 
 router.route('/add').post((req, res) => {
-  const username = req.body.username;
-  const description = req.body.description;
-//   const date = Date.parse(req.body.date);
+  const address1 = req.body.address1;
+  const address2 = req.body.address2;
+  const city = req.body.city;
+  const state = req.body.state;
+  const zip = req.body.zip;
+  const headline = req.body.headline;
+  const rent = req.body.rent;
 
   const newListing = new Listing({
-    username,
-    description
+    address1,
+    address2,
+    city,
+    state,
+    zip,
+    headline,
+    rent
   });
 
   newListing.save()
