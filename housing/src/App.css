@@ -70,4 +70,12 @@ h3{
     flex-direction: column;
 }
 
+.section{
+  height:100vh;
+  padding-top:10vh;
+  /* background-color:#f9c9c3; */
+}
 
+.form{
+  margin:20px;
+}
