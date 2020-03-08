@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import axios from 'axios';
 import Button from 'react-bootstrap/Button';
@@ -9,10 +10,8 @@ import { Link, animateScroll as scroll } from "react-scroll";
 export default class CreateListing extends Component {
     constructor(props) {
         super(props);
-    
-        this.handleChange = this.handleChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
-    
+
         this.state = {
           address1: '',
           address2: '',
@@ -34,7 +33,7 @@ export default class CreateListing extends Component {
 
     onSubmit(e) {
         e.preventDefault();
-      
+
         const listing = {
             address1: this.state.address1,
             address2: this.state.address2,

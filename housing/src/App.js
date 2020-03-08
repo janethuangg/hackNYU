@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home'
 import Listings from './components/Listings'
 import CreateListing from './components/CreateListing'
+import Register from './components/Register'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/" exact component={Home} />
       <Route path="/browse" exact component={Listings} />
       <Route path="/newListing" exact component={CreateListing} />
+      <Route path="/register" exact component={Register} />
     </Router>
   );
 }
